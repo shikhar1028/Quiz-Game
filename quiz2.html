@@ -1,0 +1,111 @@
+<html> 
+<head>
+<div id="some_div">
+<script>
+var timeLeft = 30;
+var elem = document.getElementById('some_div');
+var timerId = setInterval(countdown, 1000);
+
+function countdown() {
+    if (timeLeft == -1) {
+        clearTimeout(timerId);
+        doSomething();
+    } else {
+        elem.innerHTML =timeLeft + ' seconds remaining';
+        timeLeft--;
+    }
+}
+
+function doSomething() {
+    window.location = "timeup2.php"
+}
+</script>
+</div>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Medium Quiz </title>
+<style> 
+Body {
+  font-family: Calibri, Helvetica, sans-serif;
+  background-color: lightblue;
+}
+button { 
+       background-color: blue; 
+       width: 100%;
+        color: orange; 
+        padding: 15px; 
+        margin: 10px 0px; 
+        border: none; 
+        cursor: pointer; 
+         } 
+ form { 
+        border: 3px solid #f1f1f1; 
+    } 
+  button:hover { 
+        opacity: 0.7; 
+    }     
+ .container { 
+        padding: 25px; 
+        background-color: lightblue;
+    } 
+</style> 
+</head>  
+<body>  
+    <center> <h1 style=color:blue>Medium Quiz</h1> </center> 
+	<form method="POST" action="answer2.php">
+        <div class="container">
+		<p>1.If there are multiple recycle bin for a hard disk</p>
+  <input type="radio" id="size" name="a1" value="size">
+  <label for="size">You can set different size for each recycle bin</label><br>
+  <input type="radio" id="store" name="a1" value="store">
+  <label for="store">You can choose which recycle bin to use to store your deleted files</label><br>
+  <input type="radio" id="default" name="a1" value="default">
+  <label for="default">You can make any one of them default recycle bin</label><br>
+  <input type="radio" id="None" name="a1" value="None">
+  <label for="None">None of the above</label>
+  <br>  
+<p>2.Identify false statement:</p>
+  <input type="radio" id="Ashwins" name="a2" value="Ashwins">
+  <label for="Ashwins">You can find deleted files in recycle bin</label><br>
+  <input type="radio" id="Ghosha" name="a2" value="Ghosha">
+  <label for="Ghosha">You can restore any files in recycle bin if you ever need</label><br>
+  <input type="radio" id="Kakshivat" name="a2" value="Kakshivat">
+  <label for="Kakshivat">You can increase free space of disk by sending files in recycle bin</label><br>
+  <input type="radio" id="Patanjali" name="a2" value="Patanjali">
+  <label for="Patanjali">You can right click and choose Empty Recycle Bin to clean it at once</label>
+  <br>
+  <p>3.If the displayed system time and date is wrong, you can reset it using:</p>
+  <input type="radio" id="1878" name="a3" value="1878">
+  <label for="1878">Write</label><br>
+  <input type="radio" id="1885" name="a3" value="1885">
+  <label for="1885">Calendar</label><br>
+  <input type="radio" id="1893" name="a3" value="1893">
+  <label for="Kakshivat">Write file</label><br>
+  <input type="radio" id="1900" name="a3" value="1900">
+  <label for="1900">Control panel</label>
+  <br>
+  <p>4.You Should Save your Computer From :</p>
+  <input type="radio" id="Eight" name="a4" value="Eight">
+  <label for="Eight">Viruses</label><br>
+  <input type="radio" id="Five" name="a4" value="Five">
+  <label for="Five">Time bombs</label><br>
+  <input type="radio" id="Twelve" name="a4" value="Twelve">
+  <label for="Twelve">Worms</label><br>
+  <input type="radio" id="Ten" name="a4" value="Ten">
+  <label for="Ten">All of the above</label>
+  <br>
+  <p>5.World Wide Web is being standard by:</p>
+  <input type="radio" id="Banerjee" name="a5" value="Banerjee">
+  <label for="Banerjee">Worldwide corporation</label><br>
+  <input type="radio" id="Mortimer" name="a5" value="Mortimer">
+  <label for="Mortimer">W3C</label><br>
+  <input type="radio" id="Cunningham" name="a5" value="Cunningham">
+  <label for="Cunningham">World Wide Consortium</label><br>
+  <input type="radio" id="None" name="a5" value="None">
+  <label for="None">World Wide Web Standard</label>
+  <br>
+        <button type="submit">Submit</button>
+        </div> 
+    </form>
+	
+</body>   
+</html>

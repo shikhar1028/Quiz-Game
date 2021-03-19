@@ -1,0 +1,33 @@
+<?php
+$tt=0;
+echo "<h1>Oops!!!! Time's Up........</h1>";
+echo "<h1>Correct Answers are........</h1>";
+echo "First Answer is";
+echo"<br>";
+echo "longest railway station";
+echo"<br>";
+echo"<br>";
+echo "Your Secong Answer is";
+echo"<br>";
+echo "Patanjali";
+echo"<br>";
+echo"<br>";
+echo "Your Third Answer is";
+echo"<br>";
+echo "1893";
+echo"<br>";
+echo"<br>";
+echo "Your Fourth Answer is";
+echo"<br>";
+echo "Twelve Provinces (Subas)";
+echo"<br>";
+echo"<br>";
+echo "Your Fifth Answer is";
+echo"<br>";
+echo "R.D. Banerjee and by D.R. Sahni";
+echo"<br>";
+echo"<br>";
+echo "<h1>Your Score Is $tt</h1>";
+echo"<br>";
+echo "<a href='mainpage.php'>click here to go back</a>";
+?>

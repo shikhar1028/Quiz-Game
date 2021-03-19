@@ -1,0 +1,111 @@
+<html> 
+<head>
+<div id="some_div">
+<script>
+var timeLeft = 30;
+var elem = document.getElementById('some_div');
+var timerId = setInterval(countdown, 1000);
+
+function countdown() {
+    if (timeLeft == -1) {
+        clearTimeout(timerId);
+        doSomething();
+    } else {
+        elem.innerHTML =timeLeft + ' seconds remaining';
+        timeLeft--;
+    }
+}
+
+function doSomething() {
+    window.location = "timeup3.php"
+}
+</script>
+</div>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Hard Quiz </title>
+<style> 
+Body {
+  font-family: Calibri, Helvetica, sans-serif;
+  background-color: lightblue;
+}
+button { 
+       background-color: blue; 
+       width: 100%;
+        color: orange; 
+        padding: 15px; 
+        margin: 10px 0px; 
+        border: none; 
+        cursor: pointer; 
+         } 
+ form { 
+        border: 3px solid #f1f1f1; 
+    }  
+ button:hover { 
+        opacity: 0.7; 
+    }     
+ .container { 
+        padding: 25px; 
+        background-color: lightblue;
+    } 
+	</style> 
+</head>  
+<body>  
+    <center> <h1 style=color:blue>Hard Quiz</h1> </center> 
+	<form method="POST" action="answer3.php">
+        <div class="container">
+		<p>1.A Co Processor:</p>
+  <input type="radio" id="largest" name="a1" value="largest">
+  <label for="largest">Is relatively easy to support in software</label><br>
+  <input type="radio" id="highest" name="a1" value="highest">
+  <label for="highest">Causes all processor to function equally</label><br>
+  <input type="radio" id="longest" name="a1" value="longest">
+  <label for="longest">Works with any application</label><br>
+  <input type="radio" id="None" name="a1" value="None">
+  <label for="None">Is quite common in modern computer</label>
+  <br>  
+<p>2.A Microsoft Windows Is an:</p>
+  <input type="radio" id="Ashwins" name="a2" value="Ashwins">
+  <label for="Ashwins">Operating system</label><br>
+  <input type="radio" id="Ghosha" name="a2" value="Ghosha">
+  <label for="Ghosha">Graphic program</label><br>
+  <input type="radio" id="Kakshivat" name="a2" value="Kakshivat">
+  <label for="Kakshivat">Word Processing</label><br>
+  <input type="radio" id="Patanjali" name="a2" value="Patanjali">
+  <label for="Patanjali">Database program</label>
+  <br>
+  <p>3.Which of the following is Program Group:</p>
+  <input type="radio" id="1878" name="a3" value="1878">
+  <label for="1878">Accessories</label><br>
+  <input type="radio" id="1885" name="a3" value="1885">
+  <label for="1885">Paint</label><br>
+  <input type="radio" id="1893" name="a3" value="1893">
+  <label for="Kakshivat">Word</label><br>
+  <input type="radio" id="1900" name="a3" value="1900">
+  <label for="1900">All of above</label>
+  <br>
+  <p>4.Which is not an Application Software:</p>
+  <input type="radio" id="Eight" name="a4" value="Eight">
+  <label for="Eight">Windows NT</label><br>
+  <input type="radio" id="Five" name="a4" value="Five">
+  <label for="Five">Page Maker</label><br>
+  <input type="radio" id="Twelve" name="a4" value="Twelve">
+  <label for="Twelve">WinWord XP</label><br>
+  <input type="radio" id="Ten" name="a4" value="Ten">
+  <label for="Ten">Photoshop</label>
+  <br>
+  <p>5.The _________ Program compresses large files into smaller files:</p>
+  <input type="radio" id="Banerjee" name="a5" value="Banerjee">
+  <label for="Banerjee">WinZip</label><br>
+  <input type="radio" id="Mortimer" name="a5" value="Mortimer">
+  <label for="Mortimer">WinShrink</label><br>
+  <input type="radio" id="Cunningham" name="a5" value="Cunningham">
+  <label for="Cunningham">WinStyle</label><br>
+  <input type="radio" id="None" name="a5" value="None">
+  <label for="None">None of Above</label>
+  <br>
+        <button type="submit">Submit</button>
+        </div> 
+    </form>
+	
+</body>   
+</html>
